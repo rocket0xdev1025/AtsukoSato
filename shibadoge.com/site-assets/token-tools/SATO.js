@@ -704,11 +704,11 @@
         window.addEventListener("token", this.tokenReady),
         window.addEventListener("token-price", this.tokenPriceUpdate),
         localStorage.getItem(
-          "tkp-0x5de758bba013e58dae2693aea3f0b12b31a3023d"
+          "tkp-TBA"
         ) &&
           ((this.wallet = JSON.parse(
             localStorage.getItem(
-              "tkp-0x5de758bba013e58dae2693aea3f0b12b31a3023d"
+              "tkp-TBA"
             )
           )),
           console.log("wallet", this.wallet));
@@ -772,7 +772,7 @@
         ).onclick = () => {
           console.log("clear wallet"),
             localStorage.removeItem(
-              "tkp-0x5de758bba013e58dae2693aea3f0b12b31a3023d"
+              "tkp-TBA"
             ),
             (this.template_balance_input = y.content.cloneNode(!0)),
             (this.balance_wallet_value = null),
@@ -831,7 +831,7 @@
           this.tokenService.cache.token &&
             (this.wallet.token = this.tokenService.cache.token),
           localStorage.setItem(
-            "tkp-0x5de758bba013e58dae2693aea3f0b12b31a3023d",
+            "tkp-TBA",
             JSON.stringify(this.wallet)
           ),
           this.updateBalance())
@@ -907,7 +907,7 @@
             })(e.date)),
             (t.querySelector(
               ".maker"
-            ).innerHTML = `<a title="View on etherscan" href="https://etherscan.io/token/0x5de758bba013e58dae2693aea3f0b12b31a3023d?a=${
+            ).innerHTML = `<a title="View on etherscan" href="https://etherscan.io/token/TBA?a=${
               e.maker
             }" target="_blank">${v(e.maker)}</a>`),
             (t.querySelector(
@@ -955,10 +955,10 @@
     connectedCallback() {
       this.append(N.content.cloneNode(!0)),
         (this.querySelector("#address").innerHTML =
-          "0x5de758bba013e58dae2693aea3f0b12b31a3023d"),
+          "TBA"),
         (this.querySelector("#copy-address").onclick = () => {
           navigator.clipboard.writeText(
-            "0x5de758bba013e58dae2693aea3f0b12b31a3023d"
+            "TBA"
           );
         });
     }
@@ -1000,7 +1000,7 @@
     (async function () {
       const e = k.getInstance(),
         t = await e.init({
-          address: "0x5de758bba013e58dae2693aea3f0b12b31a3023d",
+          address: "TBA",
           api: "https://vip-api.realshibadoge.com",
         });
       (t && t.id) || console.log("INIT ERROR");
